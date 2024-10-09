@@ -38,6 +38,12 @@ Desenvolver uma WebAPI em .NET, com a finalidade de realizar um CRUD de uma enti
 - **Description:** Cria um novo cliente com as informações fornecidas.
 - **Request Body:** 
   - Um objeto JSON representando o `Customer` a ser criado.
+  ```json
+  {
+    "customerName": "John Doe",
+    "email": "john.doe@example.com"
+  }
+  ```
 - **Response:**
   - **Status Code:** `201 Created`
   - **Content:** O objeto `Customer` criado.
@@ -48,6 +54,13 @@ Desenvolver uma WebAPI em .NET, com a finalidade de realizar um CRUD de uma enti
 - **Description:** Atualiza um cliente existente com as novas informações fornecidas.
 - **Request Body:** 
   - Um objeto JSON representando o `Customer` atualizado.
+  ```json
+    {
+      "id": "6140b9f4f0e2c123456789ab",
+      "customerName": "Jane Doe",
+      "email": "jane.doe@example.com"
+    }
+  ```
 - **Response:**
   - **Status Code:** `200 OK` - Se o cliente foi atualizado com sucesso.
 
